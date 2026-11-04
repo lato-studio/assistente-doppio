@@ -96,14 +96,15 @@ def caber(im, largura, altura):
 
 
 # ---------- tipos de letra ----------
-# Sem letra na ficha do aluno: a Bodoni e a Avenir Next no Mac, a Bodoni MT (do Office) ou a
-# Georgia e a Segoe UI no Windows, e a DejaVu como último recurso.
+# Sem letra na ficha do aluno: a Bodoni e a Avenir Next no Mac; nos outros, a Bodoni Moda e a Nunito Sans
+# que vêm com o motor (em letras/, licença OFL), e a DejaVu como último recurso.
+LETRAS_DO_MOTOR = Path(__file__).resolve().parent / "letras"
 LETRAS = {
-    "titulo": [("/System/Library/Fonts/Supplemental/Bodoni 72.ttc", 2), ("C:/Windows/Fonts/BOD_B.TTF", 0),
-               ("C:/Windows/Fonts/georgiab.ttf", 0), ("DejaVuSerif-Bold.ttf", 0)],
-    "titulo_italico": [("/System/Library/Fonts/Supplemental/Bodoni 72.ttc", 1), ("C:/Windows/Fonts/BOD_I.TTF", 0),
-                       ("C:/Windows/Fonts/georgiai.ttf", 0), ("DejaVuSerif-Italic.ttf", 0)],
-    "texto": [("/System/Library/Fonts/Avenir Next.ttc", 7), ("C:/Windows/Fonts/segoeui.ttf", 0),
+    "titulo": [("/System/Library/Fonts/Supplemental/Bodoni 72.ttc", 2), (LETRAS_DO_MOTOR / "BodoniModa-Bold.ttf", 0),
+               ("DejaVuSerif-Bold.ttf", 0)],
+    "titulo_italico": [("/System/Library/Fonts/Supplemental/Bodoni 72.ttc", 1),
+                       (LETRAS_DO_MOTOR / "BodoniModa-Italico.ttf", 0), ("DejaVuSerif-Italic.ttf", 0)],
+    "texto": [("/System/Library/Fonts/Avenir Next.ttc", 7), (LETRAS_DO_MOTOR / "NunitoSans-Regular.ttf", 0),
               ("DejaVuSans.ttf", 0)],
 }
 

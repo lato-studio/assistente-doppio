@@ -165,10 +165,11 @@ def frames_do_bastidor(caminho, inicio, n):
 # ---------- texto ----------
 
 def letra(caminho, tamanho, indice=0):
-    # sem letra na ficha, a Avenir Next Demi Bold no Mac (índice 2 do .ttc) e a Segoe UI Semibold no Windows
+    # sem letra na ficha, a Avenir Next Demi Bold no Mac (índice 2 do .ttc) e, nos outros, a Nunito Sans SemiBold
+    # que vem com o motor dos carrosséis (licença OFL)
+    nunito = Path(__file__).resolve().parents[2] / "carrossel" / "motor" / "letras" / "NunitoSans-SemiBold.ttf"
     candidatos = [(caminho, indice)] if caminho else []
-    candidatos += [("/System/Library/Fonts/Avenir Next.ttc", 2), ("C:/Windows/Fonts/seguisb.ttf", 0),
-                   ("C:/Windows/Fonts/segoeui.ttf", 0), ("DejaVuSans.ttf", 0)]
+    candidatos += [("/System/Library/Fonts/Avenir Next.ttc", 2), (nunito, 0), ("DejaVuSans.ttf", 0)]
     for c, i in candidatos:
         try:
             return ImageFont.truetype(str(Path(c).expanduser()), tamanho, index=i)

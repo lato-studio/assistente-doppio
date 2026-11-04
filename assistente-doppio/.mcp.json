@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "assistente-doppio": {
+      "type": "http",
+      "url": "https://assistente.DOMINIO/mcp"
+    }
+  }
+}

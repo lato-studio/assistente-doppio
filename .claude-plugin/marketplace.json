@@ -1,0 +1,15 @@
+{
+  "name": "doppio",
+  "owner": {
+    "name": "Sérgio Nogueira"
+  },
+  "description": "O Assistente Doppio, para os alunos da mentoria Doppio.",
+  "plugins": [
+    {
+      "name": "assistente-doppio",
+      "source": "./assistente-doppio",
+      "description": "Reels, carrosséis e legendas com a metodologia Doppio.",
+      "version": "0.1.0"
+    }
+  ]
+}

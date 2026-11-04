@@ -1,0 +1,10 @@
+{
+  "name": "assistente-doppio",
+  "version": "0.1.0",
+  "description": "O Assistente Doppio: Reels, carrosséis e legendas com a metodologia Doppio, para os alunos da mentoria do Sérgio Nogueira.",
+  "author": {
+    "name": "Sérgio Nogueira"
+  },
+  "homepage": "https://lato.pt",
+  "license": "LicenseRef-Doppio"
+}

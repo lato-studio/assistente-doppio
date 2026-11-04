@@ -26,7 +26,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 **3. As atualizações automáticas.** Em `/plugin`, abre o marketplace `doppio` e liga as atualizações automáticas. Assim recebes as melhorias do motor sem fazer nada. As regras do método atualizam-se sempre sozinhas, porque vêm do Assistente.
 
-**4. Entrar.** Na primeira vez, o Assistente pede o email com que entras no Lato e manda-te um código. O login dura uma semana.
+**4. Entrar.** Na primeira vez, o Claude Code abre uma página do Assistente Doppio no browser. Escreves o email com que entras no Lato, recebes um código de 6 números por email e escreves-o na página. O login dura uma semana; depois, a página volta a abrir para um código novo. Se a página não abrir sozinha, escreve `/mcp` no Claude Code, escolhe `assistente-doppio` e carrega em entrar.
 
 ## Usar
 
